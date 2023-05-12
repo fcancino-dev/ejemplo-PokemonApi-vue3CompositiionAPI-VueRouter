@@ -1,6 +1,5 @@
 <script setup>
-import {RouterLink } from 'vue-router'
-import {RouterView} from 'vue-router'
+import {RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
@@ -11,8 +10,8 @@ import {RouterView} from 'vue-router'
           alt="Vue logo" 
           class="logo" 
           src="@/assets/logo.svg" 
-          width="50" 
-          height="50" 
+          width="40" 
+          height="40" 
         />
         <span class="font-semibold text-2xl tracking-tight">Poke API</span>
       </RouterLink>
@@ -42,12 +41,12 @@ import {RouterView} from 'vue-router'
           Pokemon
         </RouterLink> 
         <RouterLink 
-          to="/contacto" 
+          to="/favoritos" 
           class="ml-4 text-sm text-white hover:text-gray-200 font-medium" 
-          :class=" { 'font-bold border-b-2': $route.path === '/contacto' }"
+          :class=" { 'font-bold border-b-2': $route.path === '/favoritos' }"
           active-class="active"
           >
-          Contacto
+          Favoritos
         </RouterLink> 
       </div>
     </div>
